@@ -1,10 +1,8 @@
 .common{
    margin: 100px; 
-   padding:20px;
+   padding:50px;
    border: 3px rgb(108, 108, 180) solid;
    background-color: rgb(242, 249, 249);
-   
-   
 }
 .same{
 border: 2px rgb(117, 113, 141) solid;
