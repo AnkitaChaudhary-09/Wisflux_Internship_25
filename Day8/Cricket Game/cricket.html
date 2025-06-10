@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+    <H1>Bat Ball Stump Game </H1>
+    <button onclick="
+   let computerChoice= generateComputerChoice();
+    let resultMSG=getResult('Bat',computerChoice);
+   showResult('Bat',computerChoice,resultMSG);
+    
+    ">Bat</button>
+
+    <button onclick="
+    computerChoice= generateComputerChoice();
+   resultMSG =getResult('Ball',computerChoice);
+   showResult('Ball',computerChoice,resultMSG);
+    
+
+    ">Ball</button>
+    <button onclick="
+    computerChoice=generateComputerChoice();
+    resultMSG =getResult('Stump',computerChoice);
+   showResult('Stump',computerChoice,resultMSG);
+    ">Stump</button>
+
+
+<script>
+  
+  function generateComputerChoice(){
+    let Choice;
+     let randomNumber=Math.random()*3;
+  
+    if(randomNumber>0 && randomNumber<=1){
+        return'Bat';
+        
+    }else if(randomNumber>1 && randomNumber<=2){
+         return'Ball';
+    
+    }else{
+       return'Stump';
+     
+    } 
+  }
+function getResult( usermove, computerMove){
+    if(usermove ==='Bat'){
+  if (computerMove === 'Ball') {
+      return'You Won!!..';
+    } else if (computerMove === 'Bat') {
+      return`It's a tie`;
+    } else if(computerMove==='Stump'){
+      return'Computer won!!..';
+    }
+    }else if(usermove ==='Ball'){
+     if(computerMove=== 'Stump'){
+        return'You Won!!..';
+    }else if(computerMove === 'Ball'){
+        return`It's a tie`;
+    }else if(computerMove === 'Bat'){
+        return'Computer won!!..';
+    }
+    }else{
+    if (computerMove === 'Bat') {
+      return 'You Won!!..';
+    } else if (computerMove === 'Stump') {
+      return `It's a tie`;
+    } else if(computerMove === 'Ball') {
+      return'Computer won!!..';
+    }
+    }
+    
+}
+function showResult(usermove,computerMove){
+  alert(`You have chosen ${usermove}. Computer choice is ${computerMove} and ${resultMSG}`);
+}
+</script>
+</body>
+</html>
