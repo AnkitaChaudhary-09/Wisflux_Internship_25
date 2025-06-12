@@ -30,7 +30,18 @@
 
 
 <script>
+
+   let score={
+win:0,
+loss:0,
+tie:0,
+displayScore:function(){
+  return 'No of matches Won:${score.win}, Loss:${score.loss}, Tie:${score.tie}';
+}
+   };
   
+
+
   function generateComputerChoice(){
     let Choice;
      let randomNumber=Math.random()*3;
@@ -49,34 +60,47 @@
 function getResult( usermove, computerMove){
     if(usermove ==='Bat'){
   if (computerMove === 'Ball') {
+       score.win++;
       return'You Won!!..';
     } else if (computerMove === 'Bat') {
+      score.tie++;
       return`It's a tie`;
     } else if(computerMove==='Stump'){
+      score.loss++;
       return'Computer won!!..';
     }
     }else if(usermove ==='Ball'){
      if(computerMove=== 'Stump'){
+        score.win++;
         return'You Won!!..';
     }else if(computerMove === 'Ball'){
+      score.tie++;
         return`It's a tie`;
     }else if(computerMove === 'Bat'){
+      score.loss++;
         return'Computer won!!..';
     }
     }else{
     if (computerMove === 'Bat') {
+      score.win++;
       return 'You Won!!..';
     } else if (computerMove === 'Stump') {
+      score.tie++;
       return `It's a tie`;
     } else if(computerMove === 'Ball') {
+      score.loss++;
       return'Computer won!!..';
     }
     }
     
 }
 function showResult(usermove,computerMove){
-  alert(`You have chosen ${usermove}. Computer choice is ${computerMove} and ${resultMSG}`);
+
+ localStorage.setItem('Score',Json.stringify(score));
+  alert(`You have chosen ${usermove}. Computer choice is ${computerMove} 
+   ${resultMSG}
+   ${score.displayScore()}`);
 }
 </script>
 </body>
-</html>
+</ html>
