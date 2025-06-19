@@ -1,4 +1,4 @@
-const http =require('http');
+
 const fs =require('fs');
 const { URLSearchParams } = require('url');
 
@@ -36,25 +36,25 @@ req.on('end',()=>{
 const fullBody=Buffer.concat(body).toString();
 console.log(fullBody);
 const params= new URLSearchParams(fullBody);
-const bodyObject={};
-for(const [key,val] of params.enteries()){
-  bodyObject[key]=val;
-}
+// const bodyObject={};
+// for(const [key,val] of params.entries()){
+//   bodyObject[key]=val;
+// }
+const bodyObject= Object.fromEntries(params);
+
 console.log(bodyObject);
+fs.writeFileSync('user.txt',JSON.stringify(bodyObject));
 });
 
 
-fs.writeFileSync('user.txt','Ankita');
+
 res.statusCode=302;
 res.setHeader('Location','/');
 }
 }
-const server = http.createServer(requestListener);
-const Port=3001;
-server.listen(Port,() =>{
-  console.log(`server is running on addres http://localhost:${Port}`);
-});
 
+
+module.exports= requestListener;
 
 // server is running on addres http://localhost:3001
 // / GET
