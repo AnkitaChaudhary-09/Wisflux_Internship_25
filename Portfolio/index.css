@@ -1,0 +1,11 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.container {
+  display: flex;
+}
+.nav a{
+text-decoration: none;
+}
