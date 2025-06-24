@@ -1,11 +1,89 @@
 *{
   margin:0;
-  padding:0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: black;
+  color:#fff;
 }
 
-.container {
-  display: flex;
+#head-con{
+  width:100%;
+  height: 100vh;
+  background-image: url(img/anki-removebg-preview.png);
+  background-size: cover;
+  background-position: center;
 }
-.nav a{
-text-decoration: none;
+.container{
+  padding: 10px 10%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#logo{
+  color: white;
+  width: 200px;
+  margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+#logo::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #1c72b9;
+  bottom: -6px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+#logo:hover::after{
+  width: 60%;
+}
+
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #1c72b9;
+  bottom: -6px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+}
+.header-text h1{
+  font-size: 50px;
+
+  margin-top: 20px;
+}
+.header-text h1 span{
+ color: #1c72b9;
 }
