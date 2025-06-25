@@ -87,3 +87,146 @@ nav ul li a:hover::after{
 .header-text h1 span{
  color: #1c72b9;
 }
+/*---about section---*/
+#about{
+  margin: 20px 0 20px;
+  padding: 80px 0;
+  color: rgb(181, 172, 174);
+  border: 0.5px solid #151414;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col1{
+  flex-basis: 35%;
+}
+.about-col1 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: #242223 0.15px solid;
+}
+.about-col2{
+  flex-basis: 60%;
+  
+}
+.subtitle{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  
+}
+.about-text{
+color: #c0bcbc
+}
+.tab-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  
+}
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #bb2360;
+  bottom: -8px;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.tab-links:hover::after{
+  width: 100%;
+} 
+
+ .tab-links.active-links::after{
+  width: 95%;
+} 
+ span{
+  color:#bb2360;
+  font-weight: 600;
+ }
+ .tab-content ul li{
+  list-style: none;
+  margin: 10px 0;
+ }
+ .tab-content ul li span{
+  color:#bb2360;
+  font-size: 14px;
+  }
+  .tab-content{
+    display: none;
+  }
+  .tab-content.active-tab{
+    display: block;
+  }
+  /* ---skills ---*/
+
+  #skill{
+    padding: 30px 0;
+  }
+  .skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+  .skill-list div{
+    background: #262626;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s , transform 0.5s;
+  }
+  .skill-list div i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+  .skill-list div h2{
+  font-size: 30px;
+  margin-bottom: 15px;  
+  font-weight: 500;
+  }
+  .skill-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+  display: inline-block;
+  }
+.skill-list div:hover{
+  background:#0c4472;
+  transform:translate(-10px) ;
+  transition: all 0.3s ease-in-out;
+}
+/* ----project----- */
+.project{
+  padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+}
