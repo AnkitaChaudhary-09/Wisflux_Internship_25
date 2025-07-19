@@ -8,6 +8,7 @@ function App() {
     <Para/>
     <Time/>
     <p>Enjoy your day!</p>
+    
     <p>Keep track of time with Barat Clock.</p>
     <p>Thank you for using our application!</p>
     </center>
