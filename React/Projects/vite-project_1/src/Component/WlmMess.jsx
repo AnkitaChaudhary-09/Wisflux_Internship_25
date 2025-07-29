@@ -1,4 +1,4 @@
-import style from './wlmMess.module.css';
+import style from './WlmMess.module.css';
 const WlmMessage=()=>{
   return <p className={style.Mess}>Enjoy your Day!...</p>
 }

@@ -23,7 +23,7 @@ function App() {
 
 const[todoItems, setTodoItems]=useState([]);
 const handleNewItem=(itemName,itemDueDate)=>{
-
+  
   const newItem=[...todoItems, {
     task: itemName, 
     date: itemDueDate}]
