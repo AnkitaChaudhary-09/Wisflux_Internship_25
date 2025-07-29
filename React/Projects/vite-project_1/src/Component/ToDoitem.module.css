@@ -1,0 +1,14 @@
+.itemContainer{
+  text-align: left;
+  border: rgb(248, 232, 216)  0.25px solid;
+  padding: 10px;
+  margin: 10px;
+  color: rgb(226, 130, 13);
+  font-weight: 500;
+  border-radius: 10px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s; 
+  cursor: pointer;
+  width: 98%;
+  background-color: #f8e8d8;
+}
