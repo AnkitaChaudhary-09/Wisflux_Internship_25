@@ -1,0 +1,11 @@
+{
+  "users": [],
+  "friends": [],
+  "transactions": [],
+  "wallets": [
+    {
+      "userId": "nonexistent",
+      "balance": 0
+    }
+  ]
+}
