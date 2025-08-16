@@ -14,6 +14,7 @@ A web application for splitting expenses between multiple users. Users can manag
 ## Tech Stack
 
 - Frontend:
+
   - React.js
   - Vite
   - React Router DOM
@@ -49,6 +50,7 @@ money-splitter/
 
 1. Clone the repository
 2. Install dependencies:
+
    ```bash
    # Install frontend dependencies
    cd frontend
@@ -60,6 +62,7 @@ money-splitter/
    ```
 
 3. Start the development servers:
+
    ```bash
    # Start backend server (from backend directory)
    npm run dev
@@ -73,19 +76,23 @@ money-splitter/
 ## API Endpoints
 
 ### Authentication
+
 - POST `/api/users/register` - Register a new user
 - POST `/api/users/login` - Login user
 
 ### Users
+
 - GET `/api/users/profile` - Get user profile
 - POST `/api/users/wallet` - Update wallet balance
 
 ### Friends
+
 - GET `/api/friends` - Get friends list
 - POST `/api/friends` - Add a friend
 - DELETE `/api/friends/:friendId` - Remove a friend
 
 ### Transactions
+
 - GET `/api/transactions` - Get user's transactions
 - POST `/api/transactions` - Create new transaction
 
