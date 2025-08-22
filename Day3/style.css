@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(225, 89, 112);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#first{
+    border-style: solid;
+}
+#last{
+    border-style: solid;
+}
+#password{
+    border-style: solid;
+}
+#email{
+    border-style: solid;
+}
+#phone{
+    border-style: solid;
+}
+
+#border{
+    background-color: rgb(194, 196, 196);
+width: 250px;
+margin:  auto;
+}

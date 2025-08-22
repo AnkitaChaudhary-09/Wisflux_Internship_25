@@ -1,0 +1,16 @@
+.calculator{
+  background-color: rgb(232, 222, 237);
+  border: 1.5px solid rgb(131, 30, 225);
+  border-radius: 5px;
+  width: 300px; 
+  height: 450px;
+  padding: 20px;
+  margin: 100px 50%;
+
+}
+.Name{
+  text-align: center;
+  color: rgb(135, 42, 222);
+  font-size: 30px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,129 @@
+/*Display Property*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(184, 184, 45);
+    margin: 5px;
+    text-align: center;
+    display: inline; /*cann't set height and width*/
+    /* display: inline-block; 
+    /*can set height and width*/
+}
+    #box1{
+      display: none;
+    }
+    
+    /* relative unit*/
+
+   /* percentage , em & rem */
+    *{
+        margin: 0px; padding: 0px;
+        font-size: 50px;
+    }
+    #box1{
+background-color: rgb(126, 79, 170);
+height: 100px;
+width: 200px;
+font-size: 15px;
+    }
+     #box2{
+background-color: rgb(14, 62, 109);
+ width: 50%; /* take % from their parent & em take from parent but in multiples like p has 50px then r has 0.5 em means r has taken 25px*/
+  height:60% ; 
+ font-size: 0.5rem; /*take from root*/
+     }
+    #box1{
+        margin: 0px;
+        padding: 0px;
+    background-color: rgb(8, 8, 54);
+    height: 50vh; /* according toh viewport*/
+    width: 50vw;
+    }
+/*position*/
+    *{
+        margin: 0px;
+        padding:0px
+    }
+    .box{
+        background-color: rgb(24, 200, 14);
+        margin: 5px;
+        height: 50px;
+        width: 50px;
+    }
+    #box1{
+position: static;
+    }
+
+    #box2{
+        position: relative;
+        top: 10px;
+        left: 50px;
+    } 
+
+    #box3{
+        position: absolute;
+        top: 20px;
+
+    }
+
+    #box4{
+        position: fixed;
+        right: 50px;
+    }
+
+/* flex */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    height: 200px;
+    width: 300px;
+    border: 3px black solid;
+    background-color: yellow;
+    
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+    border: 3px black solid;
+    background-color: palevioletred;
+    float: left;
+
+}
+ 
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    height: 650px;
+    width: 600px;
+    margin: 25px;
+    padding: 20px;
+    border: 3px black solid;
+    background-color: yellow;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+
+    
+}
+.box{
+    height: 100px;
+    width: 100px;
+    margin : 5px;
+    border: 3px black solid;
+    background-color: palevioletred;
+    
+
+}

@@ -1,0 +1,10 @@
+.cont{
+  border: 1px solid black;
+  margin:5% 0 0 15%;
+  padding: 10px;
+  border-radius: 10px;  
+  width: 50%;
+  min-width: 300px;
+
+
+}

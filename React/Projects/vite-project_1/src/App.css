@@ -1,0 +1,30 @@
+
+.my-row{
+  margin: 10px 5px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  width: 100%;
+  min-height: 50px;
+}
+.my-button{
+  min-width: 80px;
+  padding: 10px;
+  background-color: #f0f0f0;  
+  border: none;
+  border-radius: 5px; 
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+

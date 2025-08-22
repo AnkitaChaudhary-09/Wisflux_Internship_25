@@ -1,0 +1,13 @@
+.inputStyle{
+  width:100% ;
+  border: rgb(153, 91, 29) solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(153, 91, 29);
+  font-weight: 500; 
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0,  
+  0.1); 
+  transition: transform 0.2s;
+}

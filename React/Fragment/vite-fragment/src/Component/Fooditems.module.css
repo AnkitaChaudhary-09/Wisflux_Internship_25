@@ -1,0 +1,19 @@
+/* In Fooditems.module.css */
+.myItems {
+  background-color: #f0f0f0;
+  color: rgb(147, 28, 28);
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  list-style-type: none;
+}
+.btn{
+  float: right ;
+  background-color: #9d80ee;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+}
