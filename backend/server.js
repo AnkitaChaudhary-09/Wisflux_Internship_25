@@ -1,32 +1,51 @@
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-require("dotenv").config();
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const path = require('path');
+require('dotenv').config();
+
+// Import route modules
+const authRoutes = require('./routes/auth');
+const expenseRoutes = require('./routes/expenses');
+const friendRoutes = require('./routes/friends');
+const historyRoutes = require('./routes/history');
+const walletRoutes = require('./routes/wallet');
+
+// Import middleware
+const { errorHandler, notFoundHandler } = require('./middleware/errorHandler');
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routes will be imported here
-const userRoutes = require("./routes/users");
-const transactionRoutes = require("./routes/transactions");
-const friendRoutes = require("./routes/friends");
+// Serve static files from the public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Route middleware
-app.use("/api/users", userRoutes);
-app.use("/api/transactions", transactionRoutes);
-app.use("/api/friends", friendRoutes);
+// API Routes
+app.use('/api/auth', authRoutes);
+app.use('/api/expenses', expenseRoutes);
+app.use('/api/friends', friendRoutes);
+app.use('/api/history', historyRoutes);
+app.use('/api/wallet', walletRoutes);
 
-// Data storage path
-const DATA_DIR = path.join(__dirname, "data");
-if (!require("fs").existsSync(DATA_DIR)) {
-  require("fs").mkdirSync(DATA_DIR);
-}
+// Default route
+app.get('/', (req, res) => {
+  res.json({ message: 'Money Splitter Backend API is running!' });
+});
 
-const PORT = process.env.PORT || 5000;
+// 404 handler for undefined routes
+app.use('*', notFoundHandler);
 
+// Global error handling middleware
+app.use(errorHandler);
+
+// Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = app;
