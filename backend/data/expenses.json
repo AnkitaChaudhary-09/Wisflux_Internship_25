@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1",
+    "productName": "Dinner at Restaurant",
+    "price": 150,
+    "place": "Italian Restaurant",
+    "remarks": "Birthday celebration",
+    "paidBy": "john_doe",
+    "participants": [
+      "john_doe",
+      "jane_smith",
+      "bob_wilson"
+    ],
+    "splitAmount": 50,
+    "status": "completed",
+    "createdAt": "2024-01-15T18:30:00.000Z",
+    "updatedAt": "2024-01-15T18:30:00.000Z"
+  },
+  {
+    "id": "2",
+    "productName": "Movie Tickets",
+    "price": 45,
+    "place": "Cinema Hall",
+    "remarks": "Weekend movie",
+    "paidBy": "jane_smith",
+    "participants": [
+      "jane_smith",
+      "bob_wilson"
+    ],
+    "splitAmount": 22.5,
+    "status": "completed",
+    "createdAt": "2024-01-20T20:00:00.000Z",
+    "updatedAt": "2024-01-20T20:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "productName": "efde",
+    "price": 546,
+    "place": "dsdfd",
+    "remarks": "",
+    "paidBy": "john_doe",
+    "participants": [
+      "john_doe"
+    ],
+    "splitAmount": 546,
+    "status": "pending",
+    "createdAt": "2025-08-19T12:27:08.227Z",
+    "updatedAt": "2025-08-19T12:27:08.228Z"
+  },
+  {
+    "id": "4",
+    "productName": "efde",
+    "price": 5,
+    "place": "dsdfd",
+    "remarks": "",
+    "paidBy": "dev3",
+    "participants": [
+      "dev3",
+      "dev",
+      "dev1"
+    ],
+    "splitAmount": 1.67,
+    "status": "pending",
+    "createdAt": "2025-08-19T13:47:20.379Z",
+    "updatedAt": "2025-08-19T13:47:20.379Z"
+  }
+]

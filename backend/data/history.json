@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "username": "john_doe",
+    "expenseId": "1",
+    "type": "expense_paid",
+    "amount": 150,
+    "balance": 850,
+    "description": "Split for Dinner at Restaurant",
+    "timestamp": "2024-01-15T18:30:00.000Z"
+  },
+  {
+    "id": "2",
+    "username": "jane_smith",
+    "expenseId": "1",
+    "type": "expense_split",
+    "amount": 50,
+    "balance": 700.5,
+    "description": "Split for Dinner at Restaurant",
+    "timestamp": "2024-01-15T18:30:00.000Z"
+  },
+  {
+    "id": "3",
+    "username": "bob_wilson",
+    "expenseId": "1",
+    "type": "expense_split",
+    "amount": 50,
+    "balance": 450.25,
+    "description": "Split for Dinner at Restaurant",
+    "timestamp": "2024-01-15T18:30:00.000Z"
+  },
+  {
+    "id": "4",
+    "username": "jane_smith",
+    "expenseId": "2",
+    "type": "expense_paid",
+    "amount": 45,
+    "balance": 655.5,
+    "description": "Split for Movie Tickets",
+    "timestamp": "2024-01-20T20:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "username": "bob_wilson",
+    "expenseId": "2",
+    "type": "expense_split",
+    "amount": 22.5,
+    "balance": 427.75,
+    "description": "Split for Movie Tickets",
+    "timestamp": "2024-01-20T20:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "username": "john_doe",
+    "expenseId": "3",
+    "type": "expense_paid",
+    "amount": 0,
+    "balance": 1000,
+    "description": "Split for efde",
+    "timestamp": "2025-08-19T12:27:08.228Z"
+  },
+  {
+    "id": "7",
+    "username": "dev3",
+    "expenseId": "4",
+    "type": "expense_paid",
+    "amount": 0.01,
+    "balance": 53.99,
+    "description": "Split for efde",
+    "timestamp": "2025-08-19T13:47:20.379Z"
+  },
+  {
+    "id": "8",
+    "username": "dev",
+    "expenseId": "4",
+    "type": "expense_split",
+    "amount": 1.67,
+    "balance": 99998.33,
+    "description": "Split for efde",
+    "timestamp": "2025-08-19T13:47:20.379Z"
+  },
+  {
+    "id": "9",
+    "username": "dev1",
+    "expenseId": "4",
+    "type": "expense_split",
+    "amount": 1.67,
+    "balance": 99998.33,
+    "description": "Split for efde",
+    "timestamp": "2025-08-19T13:47:20.379Z"
+  }
+]
