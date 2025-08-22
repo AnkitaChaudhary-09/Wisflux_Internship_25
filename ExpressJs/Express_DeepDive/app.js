@@ -39,7 +39,7 @@ app.get("/Contact-us", (req, res,next) => {
 });
 
 app.post("/Contact-us", (req, res, next) => {
-  console.log("first Handling ",req.url, req.method, req.body); 
+  console.log("first Handling ",req.url, req.method, req.body); 6
   next();
 });
 
